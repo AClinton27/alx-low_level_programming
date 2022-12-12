@@ -2,11 +2,15 @@
 
 /**
 
- * main - print to screen
+ * main - print the string in the put function
 
  *
 
- * Return: zero
+ * Description: using the main function
+
+ * this program prints "Programming is like building a multilingual puzzle
+
+ * Return: 0
 
  */
 
@@ -14,12 +18,7 @@ int main(void)
   
 {
   
-  char Mystr[] = "\"Programming is like building a multilingual puzzle";
-  
-
-  
-  puts(Mystr);
-  
+  puts("\"Programming is like building a multilingual puzzle");
   return (0);
   
 }
