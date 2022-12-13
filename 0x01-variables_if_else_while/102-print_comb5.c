@@ -1,26 +1,32 @@
 #include <stdio.h>
 /**
- * main - program that prints numbers from 0 to 99.
- * Return: 0
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
-
 int main(void)
 {
-	int c = 0;
+	int i;
+	int j;
 
-	while (c <= 99)
+	for (i = 0; i <= 99; i++)
 	{
-		putchar(c / 10 + '0');
-		putchar(c % 10 + '0');
-		if (c != 99)
+		for (j = i + 1; j <= 99; j++)
 		{
-			putchar(',');
+			putchar(i / 10 + '0');
+			putchar(i % 10 + '0');
 			putchar(' ');
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+
+			if (!(i == 98 && j == 99))
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		c++;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
-Footer
-© 2022 GitHu
