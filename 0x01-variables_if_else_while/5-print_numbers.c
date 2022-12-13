@@ -1,20 +1,16 @@
 #include <stdio.h>
+
 /**
- * main - print if the number is postive, zero, or negative
- *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
- */
+   * main - print digits of base ten
+   *
+   * Return: zero
+   */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-{
-	printf("%i", i);
+	int i;
+
+	for (i = 0; i <= 9; i++)
+		printf("%d", i);
+	printf("\n");
+	return (0);
 }
-printf("\n");
-return (0);
-}
-Footer
-© 2022 GitHub, Inc.
