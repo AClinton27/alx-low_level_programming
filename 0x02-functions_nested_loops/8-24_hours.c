@@ -1,25 +1,23 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
+
 /**
- * jack_bauer - main thing
+ * jack_bauer - print every minute of jack bauer.
  *
  */
 void jack_bauer(void)
 {
-	int i;
-	int j;
+	int hour;
+	int minute;
 
-	for (i = 0; i <= 23; i++)
+	for (hour = 0; hour <= 23; hour++)
+	for (minute = 0; minute <= 59; minute++)
 	{
-		for (j = 0; j <= 59; j++)
-		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(':');
-			_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			_putchar('\n');
-		}
+		_putchar('0' + hour / 10);
+		_putchar('0' + hour % 10);
+		_putchar(':');
+		_putchar('0' + minute / 10);
+		_putchar('0' + minute % 10);
+		_putchar('\n');
 	}
 }
-Footer
-© 2022 GitHub, Inc.
