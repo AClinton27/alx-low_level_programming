@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * main - debugging example
+ * main - print _putchar and a new line
  * Return: 0
  */
 int main(void)
 {
-	char *main = "_putchar";
-
-	while (*main)
-	{
-		_putchar(*main);
-		_putchar++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
