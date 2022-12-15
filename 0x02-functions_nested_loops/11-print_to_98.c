@@ -1,6 +1,12 @@
 #include "main.h"
 #include "6-abs.c"
 #include <stdio.h>
+/**
+ * main - print to 98
+ * followed by neww line
+ *
+ * Return: Always 0 (Success)
+ */
 
 void print_to_98(int n)
 {
