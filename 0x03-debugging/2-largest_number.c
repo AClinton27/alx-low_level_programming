@@ -8,21 +8,28 @@
  * Return: largest number
  */
 
-int main()
+int largest_number(int a, int b, int c)
 {
-    int a, b, c;
- 
-    printf("Enter the numbers a, b and c: ");
-    scanf("%d %d %d", &a, &b, &c);
- 
-    if (a >= b && a >= c)
-        printf("%d is the largest number.", a);
- 
-    if (b >= a && b >= c)
-        printf("%d is the largest number.", b);
- 
-    if (c >= a && c >= b)
-        printf("%d is the largest number.", c);
- 
-    return 0;
+int largest;
+
+if (a > b)
+{
+if(a > c)
+{
+largest = a;
+}
+else
+{
+largest = c;
+}
+}
+else if (b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+return (largest);
 }
